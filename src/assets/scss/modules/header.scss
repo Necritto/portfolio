@@ -1,5 +1,5 @@
 .header {
-  background-color: black;
+  background-color: #000000;
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -37,7 +37,7 @@
 .mark {
   padding: 3px;
   border-radius: 5px;
-  background-color: red;
+  background-color: #ff0000;
 }
 
 .arrow {
@@ -62,10 +62,6 @@
   .icon-down-open {
     color: $headerColor;
   }
-}
-
-.canvas {
-  z-index: 99;
 }
 
 @keyframes jumping {
