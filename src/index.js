@@ -1,2 +1,2 @@
 import "./assets/scss/index.scss";
-import "./assets/js/common";
+import "./assets/js/header";

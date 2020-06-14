@@ -45,7 +45,7 @@ module.exports = {
         exclude: "/node_modules/",
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
         loader: "file-loader",
         options: {
           name: "[name].[ext]",
@@ -95,6 +95,8 @@ module.exports = {
       patterns: [
         { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img` },
         { from: `${PATHS.src}/static`, to: "" },
+        { from: `${PATHS.src}/${PATHS.assets}docs`, to: `${PATHS.assets}docs` },
+        { from: `${PATHS.src}/${PATHS.assets}font`, to: `${PATHS.assets}font` },
       ],
     }),
 
