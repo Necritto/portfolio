@@ -1,0 +1,64 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "ccddff8e8670dcd130e3cb55fdfc2fd0",
+      "css": "down-open",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d7271d490b71df4311e32cdacae8b331",
+      "css": "home",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "053b757d97042e1c94276200c7b64b91",
+      "css": "briefcase",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "vyuzsm6wijlfwtjo4ifkoblfmsepk6g8",
+      "css": "star-filled",
+      "code": 59396,
+      "src": "typicons"
+    },
+    {
+      "uid": "ccc2329632396dc096bb638d4b46fb98",
+      "css": "mail-alt",
+      "code": 61664,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "bbd66ef66bb8fa9edde54d9a90b89150",
+      "css": "user",
+      "code": 59395,
+      "src": "entypo"
+    },
+    {
+      "uid": "6d6d0efe9717ec2962ef0a77c6210df9",
+      "css": "google",
+      "code": 59397,
+      "src": "zocial"
+    },
+    {
+      "uid": "ff16079eb4be12c49bf3014d2322acdd",
+      "css": "github-circled",
+      "code": 59398,
+      "src": "zocial"
+    },
+    {
+      "uid": "8870252f5da59a63564fb6790a347c8e",
+      "css": "linkedin-rect",
+      "code": 62226,
+      "src": "websymbols"
+    }
+  ]
+}
