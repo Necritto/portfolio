@@ -3,11 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="keywords"
+      content="javascript, html, css, website, website development,
+      buy website, beautiful sites, responsive website development, webapp,
+          frontend, react, redux, sass"
+    />
+    <meta
+      name="description"
+      content="Personal web developer portfolio. If you need a website, just hire me!"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="googlebot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta
+      name="bingbot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta property="og:locale" content="en_EN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfolio - Aleksandr Voronkin" />
+    <meta
+      property="og:description"
+      content="Personal web developer portfolio. If you need a website, just hire me!"
+    />
+    <!-- FIXME: add url after deployment -->
+    <meta property="og:url" content="localhost" />
+    <link rel="canonical" href="localhost" />
+    <!--  -->
+    <meta property="og:site_name" content="Portfolio" />
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Portfolio</title>
+    <title>Portfolio - Aleksandr Voronkin</title>
   </head>
   <body>
-    <header class="header" id="home">
+    <header class="header section" id="home">
       <div class="heading">
         <p class="heading-start">
           Hi there! My name is Aleksandr and I'm
@@ -15,18 +48,95 @@
         <h1 class="heading-title">Front-end web developer</h1>
         <p class="heading-end">
           You can look into my <span class="upper">cv</span>
-          <a href="/assets/docs/Resume Aleksandr Voronkin_en.pdf" download="CV Aleksandr Voronkin"
+          <a href="./assets/docs/Resume_Aleksandr_Voronkin_en.pdf" download="CV Aleksandr Voronkin"
             ><span class="mark">here</span></a
           >
           or (and) continue browsing my site!
         </p>
         <div class="arrow">
-          <a href="#nav" class="anchor">
+          <a href="#nav" class="anchor scroll">
             <i class="fontello icon-down-open">&#xe800;</i>
           </a>
         </div>
       </div>
       <canvas class="canvas"></canvas>
     </header>
+    <main class="main">
+      <section class="navigation" id="nav">
+        <div class="container">
+          <div class="main-header">
+            <div class="logo">
+              <h2>Aleksandr Voronkin</h2>
+            </div>
+            <nav class="nav">
+              <ul>
+                <li>
+                  <a data-page="home" href="#home" class="scroll"
+                    ><i class="fontello icon-home">&#xe801;</i>Home</a
+                  >
+                </li>
+                <li>
+                  <a data-page="about" href="#about" class="scroll"
+                    ><i class="fontello icon-user">&#xe803;</i>About me</a
+                  >
+                </li>
+                <li>
+                  <a data-page="skills" href="#skills" class="scroll"
+                    ><i class="fontello icon-star-filled">&#xe804;</i>My skills</a
+                  >
+                </li>
+                <li>
+                  <a data-page="works" href="#works" class="scroll"
+                    ><i class="fontello icon-briefcase">&#xe802;</i>My works</a
+                  >
+                </li>
+                <li>
+                  <a data-page="contacts" href="#contacts" class="scroll"
+                    ><i class="fontello icon-mail-alt">&#xf0e0;</i>Contact me</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section class="about section" id="about">
+        <div class="container">
+          <h2>About me</h2>
+          <svg class="line">
+            <polyline
+              points="0 0, 10 10, 20 0, 30 10, 40 0, 50 10, 60 0, 70 10, 80 0, 90 10,
+              100 0, 110 10, 120 0, 130 10, 140 0, 150 10, 160 0, 170 10, 180 0, 190 10, 
+              200 0, 210 10, 220 0, 230 10, 240 0, 250 10, 260 0, 270 10, 280 0, 290 10, 300 0"
+            />
+          </svg>
+          <div class="info">
+            <div class="photo">
+              <img src="./assets/img/ava.jpg" alt="my face" />
+            </div>
+            <div class="descr">
+              <p class="descr__item">
+                Hello again! I am Alexander Voronkin, and this is my personal portfolio page. I am
+                learning to create beautiful sites and can help you get the site you are dreaming
+                of.
+              </p>
+              <h3>What I do?</h3>
+              <ul>
+                <li>
+                  Frontend
+                  <p class="descr__item">Layout of beautiful and modern web pages.</p>
+                </li>
+                <li>
+                  <span class="upper">seo</span>
+                  <p class="descr__item">
+                    Optimization of the site structure for better processing by search engines.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
