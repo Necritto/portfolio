@@ -36,6 +36,7 @@ p {
 
 .container {
   max-width: 1200px;
+  margin: 0 auto;
   padding: 0 10px;
 }
 
@@ -56,3 +57,4 @@ p {
 }
 
 @import "./modules/header.scss";
+@import "./modules/navbar.scss";
