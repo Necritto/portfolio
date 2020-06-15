@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap");
 @import "./utils/vars.scss";
 @import "./utils/fonts.scss";
+@import "./utils/animation.scss";
 
 * {
   margin: 0;
@@ -58,3 +59,4 @@ p {
 
 @import "./modules/header.scss";
 @import "./modules/navbar.scss";
+@import "./modules/about.scss";
