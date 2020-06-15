@@ -54,7 +54,7 @@
           or (and) continue browsing my site!
         </p>
         <div class="arrow">
-          <a href="#nav" class="anchor">
+          <a href="#nav" class="anchor scroll">
             <i class="fontello icon-down-open">&#xe800;</i>
           </a>
         </div>
@@ -62,7 +62,7 @@
       <canvas class="canvas"></canvas>
     </header>
     <main class="main">
-      <section class="navigation">
+      <section class="navigation" id="nav">
         <div class="container">
           <div class="main-header">
             <div class="logo">
@@ -71,22 +71,59 @@
             <nav class="nav">
               <ul>
                 <li>
-                  <a href="#home"><i class="fontello icon-home">&#xe801;</i>Home</a>
+                  <a href="#home" class="scroll"><i class="fontello icon-home">&#xe801;</i>Home</a>
                 </li>
                 <li>
-                  <a href="#about"><i class="fontello icon-user">&#xe803;</i>About me</a>
+                  <a href="#about" class="scroll"
+                    ><i class="fontello icon-user">&#xe803;</i>About me</a
+                  >
                 </li>
                 <li>
-                  <a href="#skills"><i class="fontello icon-star-filled">&#xe804;</i>My skills</a>
+                  <a href="#skills" class="scroll"
+                    ><i class="fontello icon-star-filled">&#xe804;</i>My skills</a
+                  >
                 </li>
                 <li>
-                  <a href="#works"><i class="fontello icon-briefcase">&#xe802;</i>My works</a>
+                  <a href="#works" class="scroll"
+                    ><i class="fontello icon-briefcase">&#xe802;</i>My works</a
+                  >
                 </li>
                 <li>
-                  <a href="#contacts"><i class="fontello icon-mail-alt">&#xf0e0;</i>Contact me</a>
+                  <a href="#contacts" class="scroll"
+                    ><i class="fontello icon-mail-alt">&#xf0e0;</i>Contact me</a
+                  >
                 </li>
               </ul>
             </nav>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <h2>About me</h2>
+          <hr class="line" />
+          <div class="info">
+            <div class="photo">
+              <img src="./assets/img/ava.jpg" alt="my face" />
+            </div>
+            <div class="descr">
+              <p>
+                Hello again! I am Alexander Voronkin, and this is my personal portfolio page. I am
+                learning to create beautiful sites and can help you get the site you are dreaming
+                of.
+              </p>
+              <h3>What I do?</h3>
+              <ul>
+                <li>
+                  Frontend
+                  <p>Layout of beautiful and modern web pages.</p>
+                </li>
+                <li>
+                  <span class="upper">seo</span>
+                  <p>Optimization of the site structure for better processing by search engines.</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
