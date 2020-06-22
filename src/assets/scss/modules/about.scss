@@ -4,8 +4,7 @@
   overflow: hidden;
 
   h2 {
-    font-size: 2rem;
-    padding: 45px 0 35px 0;
+    @extend %padding;
   }
 }
 
@@ -14,7 +13,7 @@
   margin-bottom: 40px;
 
   polyline {
-    fill: $bgSecondColor;
+    fill: transparent;
     stroke-width: 1px;
     stroke: $mainColor;
   }

@@ -31,6 +31,11 @@ h6 {
   font-family: $headersFont;
 }
 
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
 p {
   font-size: $mainFontSize;
 }
@@ -57,6 +62,11 @@ p {
   -moz-osx-font-smoothing: grayscale;
 }
 
+%padding {
+  padding: 45px 0 35px;
+}
+
 @import "./modules/header.scss";
 @import "./modules/navbar.scss";
 @import "./modules/about.scss";
+@import "./modules/skills.scss";
