@@ -7,6 +7,8 @@
 }
 
 .skills-wrap {
+  opacity: 0;
+  transition: opacity 0.4s;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

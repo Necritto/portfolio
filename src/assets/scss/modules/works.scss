@@ -8,6 +8,7 @@
 }
 
 .works-wrap {
+  opacity: 0;
   position: relative;
   text-align: left;
   display: grid;
@@ -17,6 +18,7 @@
   grid-gap: 40px;
   justify-content: space-between;
   padding-bottom: 50px;
+  transition: opacity 0.4s;
 }
 
 .card {
@@ -66,7 +68,7 @@
   overflow: hidden;
   position: absolute;
   backface-visibility: hidden;
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
   border-radius: 10px;
   background: $bgFirstColor;
 }
