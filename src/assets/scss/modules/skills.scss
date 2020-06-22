@@ -1,0 +1,63 @@
+.skills {
+  text-align: center;
+
+  h2 {
+    @extend %padding;
+  }
+}
+
+.skills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.skills__item {
+  flex-basis: 33.33%;
+  padding-bottom: 30px;
+  position: relative;
+
+  img {
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+  }
+
+  &:hover {
+    .skills__descr {
+      opacity: 1;
+      visibility: visible;
+
+      &::after {
+        position: absolute;
+        left: 40%;
+        top: -10px;
+        content: "";
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 10px solid $mainColor;
+      }
+    }
+  }
+}
+
+.skills__descr {
+  visibility: hidden;
+  max-width: 200px;
+  background-color: $mainColor;
+  color: $headerColor;
+  hyphens: auto;
+  border-radius: 6px;
+  position: absolute;
+  top: 90%;
+  left: 24.5%;
+  opacity: 0;
+  transition: opacity 0.4s;
+  padding: 0 10px 20px;
+  z-index: 10;
+
+  h3 {
+    padding: 10px;
+  }
+}
