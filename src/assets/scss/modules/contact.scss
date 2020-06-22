@@ -23,7 +23,7 @@
   textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #aaaaaa;
+    border: 2px solid #1f1f1f;
     border-radius: 6px;
     transition: 0.3s;
   }
@@ -35,8 +35,8 @@
   input[type="submit"] {
     width: 90%;
     text-transform: uppercase;
-    background-color: #333333;
-    border: 2px solid #333333;
+    background-color: $mainColor;
+    border: 2px solid $mainColor;
     color: $headerColor;
     font-size: 1.5rem;
     cursor: pointer;
