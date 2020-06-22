@@ -1,9 +1,11 @@
 const el1 = document.querySelector(".photo");
 const el2 = document.querySelector(".descr");
+const el3 = document.querySelector(".skills-wrap");
 
 window.addEventListener("scroll", () => {
   el1.classList.add("fadeLeft");
   el2.classList.add("fadeRight");
+  if (window.pageYOffset > 820) el3.classList.add("fadeDown");
 });
 
 // Navigation link animation

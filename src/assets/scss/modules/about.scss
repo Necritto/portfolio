@@ -71,16 +71,3 @@
     max-width: 260px;
   }
 }
-
-.fadeLeft,
-.fadeRight {
-  transition: opacity 0.4s;
-}
-
-.fadeLeft {
-  animation: fadeLeft 1s forwards;
-}
-
-.fadeRight {
-  animation: fadeRight 1s backwards;
-}
