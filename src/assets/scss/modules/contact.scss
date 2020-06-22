@@ -1,0 +1,53 @@
+.contacts {
+  text-align: center;
+
+  h2 {
+    @extend %padding;
+  }
+}
+
+.contact-wrap {
+  max-width: 440px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  & div {
+    margin-bottom: 25px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #1f1f1f;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    width: 90%;
+    text-transform: uppercase;
+    background-color: $mainColor;
+    border: 2px solid $mainColor;
+    color: $headerColor;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+.form-sending {
+  display: none;
+}
+
+.success {
+  display: block;
+  color: #228b22;
+}
