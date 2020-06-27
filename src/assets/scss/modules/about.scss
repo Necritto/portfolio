@@ -71,3 +71,21 @@
     max-width: 260px;
   }
 }
+
+// Media queries
+
+@media screen and (max-width: 900px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .descr {
+    text-align: center;
+    margin-top: 30px;
+    flex-basis: 100%;
+
+    .descr__item {
+      text-indent: 0;
+    }
+  }
+}

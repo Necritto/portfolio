@@ -8,3 +8,13 @@ $mainColor: #000000;
 
 $bgFirstColor: #ffffff;
 $bgSecondColor: #f0f0f0;
+
+$elastic: (
+  position: left,
+  backgroundColor: $bgFirstColor,
+  duration: 300,
+);
+
+$position: map-get($elastic, "position");
+$backgroundColor: map-get($elastic, "backgroundColor");
+$duration: map-get($elastic, "duration");
