@@ -1,4 +1,6 @@
-(function () {
+particleBond();
+
+function particleBond() {
   const canvas = document.querySelector(".canvas");
   const ctx = canvas.getContext("2d");
   let width = (canvas.width = innerWidth - 17);
@@ -8,8 +10,8 @@
     bgColor: "#000000",
     particleColor: "rgba(255, 40, 40, 1)",
     particleRadius: 3,
-    particleCount: 100,
-    particleMaxVelocity: 1.5,
+    particleCount: 60,
+    particleMaxVelocity: 1,
     lineLength: 150,
     particleLife: 5,
   };
@@ -118,4 +120,4 @@
   }
 
   init();
-})();
+}

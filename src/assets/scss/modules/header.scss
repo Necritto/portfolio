@@ -24,12 +24,6 @@
   letter-spacing: 15px;
 }
 
-.heading-end {
-  a {
-    color: $headerColor;
-  }
-}
-
 .upper {
   text-transform: uppercase;
 }
@@ -38,7 +32,8 @@
   padding: 3px;
   border-radius: 5px;
   background-color: #ff0000;
-  text-shadow: 1px 1px 5px #000000;
+  font-weight: 700;
+  color: $mainColor;
 }
 
 .arrow {
