@@ -1,0 +1,69 @@
+.header {
+  background-color: #000000;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  color: $headerColor;
+}
+
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 0 10px;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+}
+
+.heading-title {
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 15px;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.mark {
+  padding: 3px;
+  border-radius: 5px;
+  background-color: #ff0000;
+  font-weight: 700;
+  color: $mainColor;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  height: 0;
+  transform: translateY(15vh);
+
+  .anchor {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid $headerColor;
+
+    i {
+      padding-left: 2px;
+      animation: 1.36s linear infinite jumping;
+    }
+  }
+
+  .icon-down-open {
+    color: $headerColor;
+  }
+}
+
+// Media queries
+
+@media screen and (max-width: 600px) {
+  .heading-title {
+    font-size: 2rem;
+  }
+}

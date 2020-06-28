@@ -1,0 +1,248 @@
+%line {
+  content: "";
+  position: absolute;
+  height: 33.33%;
+  width: 0;
+  transition: 0.4s ease;
+  background-color: #ff2828;
+}
+
+.navigation {
+  position: sticky;
+  top: 0;
+  background-color: $bgFirstColor;
+  z-index: 1000;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.nav {
+  flex-basis: 50%;
+  margin: 10px 0;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    position: relative;
+    height: 100%;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+      color: $mainColor;
+      transition: 0.4s ease;
+      z-index: 1;
+
+      &::before {
+        @extend %line;
+        left: 0;
+        bottom: 66.66%;
+        z-index: -1;
+        border-radius: 10px 10px 0 0;
+      }
+
+      i {
+        margin-right: 10px;
+      }
+    }
+
+    &::before {
+      @extend %line;
+      right: 0;
+      bottom: 33.33%;
+    }
+
+    &::after {
+      @extend %line;
+      left: 0;
+      bottom: 1px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    &:hover {
+      a {
+        text-shadow: 1px 1px 5px #ffffff;
+
+        &::before {
+          width: 100%;
+        }
+      }
+
+      &::before,
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  .position {
+    a {
+      color: red;
+    }
+
+    &:hover {
+      a {
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+.show-menu {
+  display: none;
+}
+
+// Media queries
+
+@media screen and (max-width: 1070px) {
+  .nav {
+    flex-basis: 65%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .show-menu {
+    background-color: $bgFirstColor;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 2px;
+      margin-top: -1px;
+      margin-left: -10px;
+      background-color: $mainColor;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 2px;
+        margin-top: -1px;
+        margin-left: -10px;
+        background-color: $mainColor;
+        transition: $duration * 1ms ease;
+      }
+
+      &::before {
+        transform: translateY(-5px);
+      }
+
+      &::after {
+        transform: translateY(5px);
+      }
+    }
+  }
+
+  .show-menu__active {
+    span::before {
+      transform: rotate(-35deg);
+      transform-origin: left bottom;
+      width: 10px;
+    }
+
+    span::after {
+      transform: rotate(35deg);
+      transform-origin: left top;
+      width: 10px;
+    }
+  }
+
+  .nav {
+    flex-basis: 10%;
+    padding: 20px 0;
+    z-index: 99;
+    transition-delay: $duration * 1ms;
+
+    &.active {
+      transition-delay: 0s;
+
+      .nav__inner {
+        transform: translate(0, 0);
+        transition: transform $duration * 1ms linear;
+
+        &:after {
+          width: 300%;
+          border-radius: 50%;
+          animation: elastic ($duration/2) * 1ms ease ($duration + 0.5) * 1ms both;
+        }
+      }
+    }
+  }
+
+  .nav__inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1001;
+    transform: translate(-100%, 0);
+    transition: transform $duration * 1ms linear;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-color: $backgroundColor;
+      border-radius: 50%;
+      z-index: -1;
+      transition: all $duration * 1ms linear;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo h2 {
+    font-size: 1.5rem;
+  }
+
+  .nav__inner {
+    li a {
+      font-size: 0.8rem;
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav__inner {
+    li a {
+      font-size: 0.8rem;
+    }
+  }
+}

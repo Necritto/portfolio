@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap");
+@import "./utils/vars.scss";
+@import "./utils/fonts.scss";
+@import "./utils/animation.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: $mainFont;
+  color: $mainColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headersFont;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  font-size: $mainFontSize;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.fontello {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%padding {
+  padding: 45px 0 35px;
+}
+
+@import "./modules/header.scss";
+@import "./modules/navbar.scss";
+@import "./modules/about.scss";
+@import "./modules/skills.scss";
+@import "./modules/works.scss";
+@import "./modules/contact.scss";
+@import "./modules/footer.scss";
+@import "./modules/scrollbar.scss";

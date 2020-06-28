@@ -1,10 +1,430 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="keywords"
+      content="javascript, html, css, website, website development,
+      buy website, beautiful sites, responsive website development, webapp,
+          frontend, react, redux, sass"
+    />
+    <meta
+      name="description"
+      content="Personal web developer portfolio. If you need a website, just hire me!"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="googlebot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta
+      name="bingbot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta property="og:locale" content="en_EN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfolio - Aleksandr Voronkin" />
+    <meta
+      property="og:description"
+      content="Personal web developer portfolio. If you need a website, just hire me!"
+    />
+    <!-- FIXME: add url after deployment -->
+    <meta property="og:url" content="localhost" />
+    <link rel="canonical" href="localhost" />
+    <!--  -->
+    <meta property="og:site_name" content="Portfolio" />
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Portfolio</title>
+    <title>Portfolio - Aleksandr Voronkin</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header section" id="home">
+      <div class="heading">
+        <p class="heading-start">
+          Hi there! My name is Aleksandr and I'm
+        </p>
+        <h1 class="heading-title">Front-end web developer</h1>
+        <p class="heading-end">
+          You can look into my <span class="upper">cv</span>
+          <a
+            class="mark"
+            href="./assets/docs/Resume_Aleksandr_Voronkin_en.pdf"
+            download="CV Aleksandr Voronkin"
+            >here</a
+          >
+          or (and) continue browsing my site!
+        </p>
+        <div class="arrow">
+          <a href="#nav" class="anchor scroll">
+            <i class="fontello icon-down-open">&#xe800;</i>
+          </a>
+        </div>
+      </div>
+      <canvas class="canvas"></canvas>
+    </header>
+    <main class="main">
+      <section class="navigation" id="nav">
+        <div class="container">
+          <div class="main-header">
+            <div class="logo">
+              <h2>Aleksandr Voronkin</h2>
+            </div>
+            <nav class="nav">
+              <ul class="nav__inner">
+                <li>
+                  <a data-page="home" href="#home" class="scroll"
+                    ><i class="fontello icon-home">&#xe801;</i>Home</a
+                  >
+                </li>
+                <li>
+                  <a data-page="about" href="#about" class="scroll"
+                    ><i class="fontello icon-user">&#xe803;</i>About</a
+                  >
+                </li>
+                <li>
+                  <a data-page="skills" href="#skills" class="scroll"
+                    ><i class="fontello icon-star-filled">&#xe804;</i>Skills</a
+                  >
+                </li>
+                <li>
+                  <a data-page="works" href="#works" class="scroll"
+                    ><i class="fontello icon-briefcase">&#xe802;</i>Works</a
+                  >
+                </li>
+                <li>
+                  <a data-page="contacts" href="#contacts" class="scroll"
+                    ><i class="fontello icon-mail-alt">&#xf0e0;</i>Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <button class="show-menu"><span></span>.</button>
+          </div>
+        </div>
+      </section>
+      <section class="about section" id="about">
+        <div class="container">
+          <h2>About me</h2>
+          <svg class="line">
+            <polyline
+              points="0 0, 10 10, 20 0, 30 10, 40 0, 50 10, 60 0, 70 10, 80 0, 90 10,
+              100 0, 110 10, 120 0, 130 10, 140 0, 150 10, 160 0, 170 10, 180 0, 190 10, 
+              200 0, 210 10, 220 0, 230 10, 240 0, 250 10, 260 0, 270 10, 280 0, 290 10, 300 0"
+            />
+          </svg>
+          <div class="info">
+            <div class="photo">
+              <img src="./assets/img/ava.jpg" alt="my face" />
+            </div>
+            <div class="descr">
+              <p class="descr__item">
+                Hello again! I am Alexander Voronkin, and this is my personal portfolio page. I am
+                learning to create beautiful sites and can help you get the site you are dreaming
+                of.
+              </p>
+              <h3>What I do?</h3>
+              <ul>
+                <li>
+                  Frontend
+                  <p class="descr__item">Layout of beautiful and modern web pages.</p>
+                </li>
+                <li>
+                  <span class="upper">seo</span>
+                  <p class="descr__item">
+                    Optimization of the site structure for better processing by search engines.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills section" id="skills">
+        <div class="container">
+          <h2>My skills</h2>
+          <svg class="line">
+            <polyline
+              points="0 0, 10 10, 20 0, 30 10, 40 0, 50 10, 60 0, 70 10, 80 0, 90 10,
+              100 0, 110 10, 120 0, 130 10, 140 0, 150 10, 160 0, 170 10, 180 0, 190 10, 
+              200 0, 210 10, 220 0, 230 10, 240 0, 250 10, 260 0, 270 10, 280 0, 290 10, 300 0"
+            />
+          </svg>
+          <div class="skills-wrap">
+            <div class="skills__item">
+              <img src="./assets/img/svg/html.svg" alt="html5" />
+              <div class="skills__descr">
+                <h3><span class="upper">html 5</span></h3>
+                <p>
+                  HTML5 is a markup language used for structuring and presenting content on the
+                  World Wide Web.
+                </p>
+              </div>
+            </div>
+            <div class="skills__item">
+              <img src="./assets/img/svg/css.svg" alt="css" />
+              <div class="skills__descr">
+                <h3><span class="upper">css</span></h3>
+                <p>
+                  Cascading Style Sheets (CSS) is a style sheet language used for describing the
+                  presentation of a document written in a markup language like HTML.
+                </p>
+              </div>
+            </div>
+            <div class="skills__item">
+              <img src="./assets/img/svg/js.svg" alt="js" />
+              <div class="skills__descr">
+                <h3><span class="upper">javascript</span></h3>
+                <p>A high-level programming language used to create interactive web pages.</p>
+              </div>
+            </div>
+            <div class="skills__item">
+              <img src="./assets/img/svg/pug.svg" alt="pug" />
+              <div class="skills__descr">
+                <h3><span class="upper">pug</span></h3>
+                <p>
+                  Pug is a high-performance template engine heavily influenced by Haml and
+                  implemented with JavaScript for Node.js and browsers.
+                </p>
+              </div>
+            </div>
+            <div class="skills__item">
+              <img src="./assets/img/svg/sass.svg" alt="sass" />
+              <div class="skills__descr">
+                <h3><span class="upper">sass</span></h3>
+                <p>
+                  Sass is the most mature, stable, and powerful professional grade CSS extension
+                  language in the world.
+                </p>
+              </div>
+            </div>
+            <div class="skills__item">
+              <img src="./assets/img/svg/bootstrap.svg" alt="bootstrap" />
+              <div class="skills__descr">
+                <h3><span class="upper">bootstrap</span></h3>
+                <p>
+                  Bootstrap is a free and open-source CSS framework directed at responsive,
+                  mobile-first front-end web development.
+                </p>
+              </div>
+            </div>
+            <div class="skills__item">
+              <img src="./assets/img/svg/react.svg" alt="react" />
+              <div class="skills__descr">
+                <h3><span class="upper">react</span></h3>
+                <p>A JavaScript library for building user interfaces.</p>
+              </div>
+            </div>
+            <div class="skills__item">
+              <img src="./assets/img/svg/redux.svg" alt="redux" />
+              <div class="skills__descr">
+                <h3><span class="upper">redux</span></h3>
+                <p>Redux is an open-source JavaScript library for managing application state.</p>
+              </div>
+            </div>
+            <div class="skills__item">
+              <img src="./assets/img/svg/webpack.svg" alt="webpack" />
+              <div class="skills__descr">
+                <h3><span class="upper">webpack</span></h3>
+                <p>Webpack is an open-source JavaScript module bundler.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="works section" id="works">
+        <div class="container">
+          <h2>My works</h2>
+          <svg class="line">
+            <polyline
+              points="0 0, 10 10, 20 0, 30 10, 40 0, 50 10, 60 0, 70 10, 80 0, 90 10,
+              100 0, 110 10, 120 0, 130 10, 140 0, 150 10, 160 0, 170 10, 180 0, 190 10, 
+              200 0, 210 10, 220 0, 230 10, 240 0, 250 10, 260 0, 270 10, 280 0, 290 10, 300 0"
+            />
+          </svg>
+          <div class="works-wrap">
+            <div class="card">
+              <div class="front">
+                <img src="./assets/img/works/puzzle.png" alt="puzzle" />
+              </div>
+              <div class="back">
+                <div class="content">
+                  <h3>Puzzle game</h3>
+                  <a
+                    href="https://necritto.github.io/puzzle/src/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Open<br />project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="front">
+                <img src="./assets/img/works/get2.png" alt="get2" />
+              </div>
+              <div class="back">
+                <div class="content">
+                  <h3>Travel Agency website</h3>
+                  <a
+                    href="https://get2-41943.firebaseapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Open<br />project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="front">
+                <img src="./assets/img/works/arkanoid.png" alt="arkanoid" />
+              </div>
+              <div class="back">
+                <div class="content">
+                  <h3>Arkanoid game</h3>
+                  <a
+                    href="https://necritto.github.io/arkanoid/src/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Open<br />project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="front">
+                <img src="./assets/img/works/modus.png" alt="modus" />
+              </div>
+              <div class="back">
+                <div class="content">
+                  <h3>Multi-page site</h3>
+                  <a
+                    href="https://necritto.github.io/modusVersus/dist/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Open<br />project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="front">
+                <img src="./assets/img/works/quiz.png" alt="quiz" />
+              </div>
+              <div class="back">
+                <div class="content">
+                  <h3>Training project React Quiz</h3>
+                  <a
+                    href="https://react-quiz-93e04.firebaseapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Open<br />project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="front">
+                <img src="./assets/img/works/tt_adm.png" alt="tt_adm" />
+              </div>
+              <div class="back">
+                <div class="content">
+                  <h3>Test task</h3>
+                  <a
+                    href="https://necritto.github.io/tt_adm/src/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Open<br />project</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts section" id="contacts">
+        <div class="container">
+          <h2>Contact me</h2>
+          <svg class="line">
+            <polyline
+              points="0 0, 10 10, 20 0, 30 10, 40 0, 50 10, 60 0, 70 10, 80 0, 90 10,
+              100 0, 110 10, 120 0, 130 10, 140 0, 150 10, 160 0, 170 10, 180 0, 190 10, 
+              200 0, 210 10, 220 0, 230 10, 240 0, 250 10, 260 0, 270 10, 280 0, 290 10, 300 0"
+            />
+          </svg>
+          <div class="contact-wrap">
+            <p>
+              Please leave your contact details and message so that I can contact you as soon as
+              possible.
+            </p>
+            <form action="contact" method="post">
+              <div class="name">
+                <label for="name">Your name :</label>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Enter name here..."
+                  required
+                />
+              </div>
+              <div class="email">
+                <label for="email">Your email :</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Enter email here..."
+                  required
+                />
+              </div>
+              <div class="message">
+                <label for="message">Your message :</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="10"
+                  placeholder="Enter message here..."
+                  required
+                ></textarea>
+              </div>
+              <div class="submit">
+                <input type="submit" value="Send" />
+              </div>
+            </form>
+          </div>
+          <div class="form-sending">
+            <h3>Thank you for your message!</h3>
+            <p>I will try to contact you soon!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/necritto" target="_blank" rel="noopener noreferrer"
+              ><i class="fontello github-circled">&#xe806;</i></a
+            >
+          </li>
+          <li>
+            <a href="mailto:work.alvor.it@gmail.com"><i class="fontello google">&#xe805;</i></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/aleksandr-voronkin-280b85194/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fontello linkedin-rect">&#xf312;</i></a
+            >
+          </li>
+        </ul>
+        <div class="copyright">
+          <p>&copy; 2020 by Aleksandr Voronkin</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
