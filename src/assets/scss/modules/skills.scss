@@ -40,11 +40,32 @@
       }
     }
   }
+
+  @each $key, $color in $progressColor {
+    &:nth-child(#{$key}) {
+      .progress {
+        .bg {
+          background-color: $color;
+        }
+      }
+    }
+  }
+
+  @each $key, $width in $progressWidth {
+    &:nth-child(#{$key}) {
+      .progress {
+        .bg {
+          width: $width;
+        }
+      }
+    }
+  }
 }
 
 .skills__descr {
   visibility: hidden;
   max-width: 200px;
+  height: 300px;
   background-color: $mainColor;
   color: $headerColor;
   hyphens: auto;
@@ -70,6 +91,60 @@
   }
 }
 
+.progress {
+  cursor: pointer;
+  background-color: #2b2b2b;
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  position: relative;
+  padding: 3px;
+  margin: 10px 0;
+
+  &:hover {
+    .fill {
+      animation-play-state: running;
+    }
+
+    .num {
+      transform: translate(-50%, 25px);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .fill {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.5) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0.5) 85%,
+      transparent 75%,
+      transparent
+    );
+    background-size: 20px;
+    border-radius: 5px;
+    height: 100%;
+    animation: move 0.8s linear infinite paused;
+  }
+
+  .num {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: $mainFontSize;
+    transition: 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
 // Media queries
 
 @media screen and (max-width: 780px) {
@@ -80,6 +155,6 @@
 
 @media screen and (max-width: 540px) {
   .skills__item {
-    flex-basis: 90%;
+    flex-basis: 70%;
   }
 }
