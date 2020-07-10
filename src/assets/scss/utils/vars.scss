@@ -9,6 +9,36 @@ $mainColor: #000000;
 $bgFirstColor: #ffffff;
 $bgSecondColor: #f0f0f0;
 
+$progressColor: (
+  1: #f1662a,
+  2: #1572b6,
+  3: #f5de19,
+  4: #56332b,
+  5: #cc6699,
+  6: #5b4282,
+  7: #61dafb,
+  8: #764abc,
+  9: #0868ac,
+  10: #1c78c0,
+  11: #6280b6,
+  12: #9ac551,
+);
+
+$progressWidth: (
+  1: 90%,
+  2: 70%,
+  3: 50%,
+  4: 70%,
+  5: 50%,
+  6: 50%,
+  7: 45%,
+  8: 50%,
+  9: 50%,
+  10: 50%,
+  11: 30%,
+  12: 30%,
+);
+
 $elastic: (
   position: left,
   backgroundColor: $bgFirstColor,

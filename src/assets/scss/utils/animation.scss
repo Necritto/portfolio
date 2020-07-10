@@ -93,3 +93,9 @@
     border-radius: 0;
   }
 }
+
+@keyframes move {
+  100% {
+    background-position: 40px 0;
+  }
+}
