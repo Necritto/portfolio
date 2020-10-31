@@ -11,7 +11,9 @@ const PATHS = {
 };
 
 const PAGES_DIR = PATHS.src;
-const PAGES = fs.readdirSync(PAGES_DIR).filter((fileName) => fileName.endsWith(".html"));
+const PAGES = fs
+  .readdirSync(PAGES_DIR)
+  .filter((fileName) => fileName.endsWith(".html"));
 
 module.exports = {
   externals: {
@@ -45,7 +47,7 @@ module.exports = {
         exclude: "/node_modules/",
       },
       {
-        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2|php)$/,
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
         loader: "file-loader",
         options: {
           name: "[name].[ext]",
@@ -62,7 +64,10 @@ module.exports = {
           },
           {
             loader: "postcss-loader",
-            options: { sourceMap: true, config: { path: "./postcss.config.js" } },
+            options: {
+              sourceMap: true,
+              config: { path: "./postcss.config.js" },
+            },
           },
           {
             loader: "sass-loader",
@@ -81,7 +86,10 @@ module.exports = {
           },
           {
             loader: "postcss-loader",
-            options: { sourceMap: true, config: { path: "./postcss.config.js" } },
+            options: {
+              sourceMap: true,
+              config: { path: "./postcss.config.js" },
+            },
           },
         ],
       },
@@ -97,7 +105,6 @@ module.exports = {
         { from: `${PATHS.src}/static`, to: "" },
         { from: `${PATHS.src}/${PATHS.assets}docs`, to: `${PATHS.assets}docs` },
         { from: `${PATHS.src}/${PATHS.assets}font`, to: `${PATHS.assets}font` },
-        { from: `${PATHS.src}/${PATHS.assets}php`, to: `${PATHS.assets}php` },
       ],
     }),
 
